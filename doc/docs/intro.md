@@ -1,16 +1,16 @@
-# 🎉 Figma Component Dependency Analysis
+---
+id: introduction
+title: Welcome to the Figma Component Dependency Analysis Documentation
+sidebar_label: Introduction
+---
 
-Welcome to the **Figma Component Dependency Analysis** project! 🎉
+# 🎉 Welcome to the Figma Component Dependency Analysis Documentation!
 
-This project is a powerful tool designed to help you understand and optimize the dependencies between components in your Figma design files. By analyzing how components depend on each other, you can identify the most critical components, plan development order, and improve the efficiency of your design system.
+Hello, and welcome to the comprehensive guide for the Figma Component Dependency Analysis project! 🌟 This documentation is your ultimate resource for understanding how to analyze dependencies between components in your Figma design files. Whether you're looking to optimize your workflow, understand the relationships between components, or plan your development process effectively, you've come to the right place.
 
 ## 🚀 What is Figma Component Dependency Analysis?
 
 The Figma Component Dependency Analysis project is a cutting-edge tool designed to help you understand the intricate dependencies between components in your Figma designs. By analyzing how components rely on each other, this tool enables you to identify the most critical components, plan development order, and optimize your design system for better reusability and efficiency.
-
-## 🌟 Why This Project?
-
-In today's fast-paced design environment, understanding dependencies is crucial. The Figma Component Dependency Analysis project is designed to provide you with the clarity needed to manage complex design systems, prioritize critical components, and streamline your development process. By focusing on dependencies, this tool helps ensure that your design system is both scalable and maintainable.
 
 ## 🛠️ Key Features
 
@@ -20,38 +20,24 @@ In today's fast-paced design environment, understanding dependencies is crucial.
 - **High-Quality Reports**: Generate detailed and actionable reports that provide clear insights into your component structure, making it easier to communicate with your team.
 - **Scalable Growth**: Designed with future growth in mind, this tool has the potential to evolve into a comprehensive plugin, enhancing its capabilities and integration within the Figma ecosystem.
 
-## 🛠️ Getting Started
+## 📚 What You Will Learn
 
-### Prerequisites
+Throughout this documentation, you'll gain deep insights into:
 
-Before you begin, ensure you have met the following requirements:
+- **Setting up the project**: Step-by-step instructions to get started quickly.
+- **Understanding dependency relationships**: How to interpret the analysis of component dependencies and apply this knowledge to your projects.
+- **Generating and improving reports**: Learn how to create detailed reports that highlight component dependencies and usage, and how these can be improved as the project evolves.
+- **Best practices**: Tips and strategies for using the tool to its full potential, ensuring that your design system is both robust and flexible.
 
-- Node.js installed on your machine
-- A Figma API token and the file ID of the Figma file you wish to analyze
+## 🔍 Module Breakdown
 
-### Installation
+This documentation is organized by modules, each focusing on a specific aspect of the project:
 
-1. Clone the repository:
+- **API**: Discover how the tool interacts with the Figma API to fetch and analyze component data.
+- **Components**: Explore the different modules that perform dependency analysis, component usage tracking, and report generation.
+- **Output Enhancement**: Learn how the tool manages output files and how the quality of these outputs can be enhanced over time.
 
-   ```bash
-   git clone https://github.com/gitsual/figma-component-dependency-analysis.git
-   cd figma-component-dependency-analysis
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-3. Create a `.env` file in the root directory with your Figma API token and file ID:
-
-   ```plaintext
-   FIGMA_API_TOKEN=your-figma-api-token
-   FILE_ID=your-figma-file-id
-   ```
-
-#### Setting Up Your .env File
+## 🔑 Setting Up Your .env File
 
 Before you begin using the Figma Component Dependency Analysis tool, you'll need to configure your environment by setting up a `.env` file in the root directory of your project. This file will store sensitive information such as your Figma API token and the ID of the Figma file you wish to analyze.
 
@@ -62,47 +48,18 @@ FIGMA_API_TOKEN=figd_XXX_XXXXXXXXXXXXXXXXXXXXXXXXX_XXXXXXXXXX
 FILE_ID=YYYYYYYYYYYYYYYYYYYYYY
 ```
 
-##### Obtaining Your FIGMA_API_TOKEN
+### Obtaining Your FIGMA_API_TOKEN
 
 1. **Log in to Figma**: Start by logging into your Figma account.
 2. **Access Your Account Settings**: Click on your profile picture in the top-right corner, and select "Settings."
 3. **Generate a Personal Access Token**: Scroll down to the "Personal Access Tokens" section and click "Create a new token." You will be prompted to give your token a name. Once created, copy the token—this is your `FIGMA_API_TOKEN`.
 4. **Store the Token Securely**: Paste the token into the `.env` file as shown above. Ensure that this file is not shared publicly, as it contains sensitive information.
 
-##### Finding Your FILE_ID
+### Finding Your FILE_ID
 
 1. **Open the Figma File**: Navigate to the Figma file you want to analyze.
 2. **Copy the File ID from the URL**: The `FILE_ID` is part of the URL when viewing your file. For example, if your file's URL is `https://www.figma.com/file/YYYYYYYYYYYYYYYYYYYYYY/My-Design-File`, then `YYYYYYYYYYYYYYYYYYYYYY` is your `FILE_ID`.
 3. **Add the FILE_ID to Your .env File**: Copy the ID and paste it into the `.env` file under `FILE_ID`.
-
-### Running the Analysis
-
-To run the analysis, execute the following command:
-
-```bash
-npm start
-```
-
-This will analyze the dependencies within your Figma file and generate detailed reports in the `output` directory.
-
-## 📚 Running the Docusaurus Documentation
-
-To run and view the Docusaurus documentation locally, follow these steps:
-
-1. Navigate to the documentation directory:
-```bash
-cd doc
-```
-
-2. Start the Docusaurus local server:
-
-```bash
-npm run start
-```
-
-3. View the documentation: Open your browser and navigate to http://localhost:3000. You will see the documentation homepage where you can explore all the guides and references.
-
-This setup allows you to easily update and view changes to the documentation in real-time as you work on your project.
 
 ## 🎯 Example Workflow
 
@@ -114,6 +71,10 @@ Here’s a quick overview of how you might use the Figma Component Dependency An
 4. **Plan Development**: Use the insights gained from the reports to plan the development order of components, starting with the most foundational elements.
 5. **Output Improvement**: As the project grows, focus on enhancing the quality and clarity of the reports, and consider contributing to the development of a plugin.
 
+## 🌟 Why This Project?
+
+In today's fast-paced design environment, understanding dependencies is crucial. The Figma Component Dependency Analysis project is designed to provide you with the clarity needed to manage complex design systems, prioritize critical components, and streamline your development process. By focusing on dependencies, this tool helps ensure that your design system is both scalable and maintainable.
+
 ## 🙌 Get Involved!
 
 This project is open-source and thrives on collaboration. As we aim to evolve this tool into a powerful plugin, your contributions and ideas are invaluable. Check out the repository, and don't hesitate to submit issues, improvements, or pull requests.
@@ -121,17 +82,3 @@ This project is open-source and thrives on collaboration. As we aim to evolve th
 ## 🚦 Ready to Start?
 
 Navigate through the sidebar to explore the details of each module, or begin with the setup guide to get everything up and running. Happy analyzing, and let's build something great together! 🎉
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/gitsual/figma-component-dependency-analysis/blob/main/LICENSE) file for details.
-
-## 📬 Contact
-
-- GitHub: [gitsual](https://github.com/gitsual)
-- Twitter: [@sanz_sual](https://twitter.com/sanz_sual)
-- Instagram: [@sanz_sual](https://instagram.com/sanz_sual)
-
-## 🌟 Acknowledgements
-
-Special thanks to the open-source community for their contributions and support!

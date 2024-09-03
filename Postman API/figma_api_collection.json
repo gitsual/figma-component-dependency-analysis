@@ -1,0 +1,178 @@
+{
+    "info": {
+      "name": "Figma API Collection",
+      "_postman_id": "uuid",
+      "description": "Collection of all possible Figma API requests with preloaded api_token and file_id.",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Get Figma File",
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "X-Figma-Token",
+              "value": "your-figma-token-here",
+              "type": "text"
+            }
+          ],
+          "url": {
+            "raw": "https://api.figma.com/v1/files/{{file_id}}",
+            "host": ["https://api.figma.com"],
+            "path": ["v1", "files", "{{file_id}}"]
+          }
+        }
+      },
+      {
+        "name": "Get Figma File Nodes",
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "X-Figma-Token",
+              "value": "your-figma-token-here",
+              "type": "text"
+            }
+          ],
+          "url": {
+            "raw": "https://api.figma.com/v1/files/{{file_id}}/nodes?ids={{node_ids}}",
+            "host": ["https://api.figma.com"],
+            "path": ["v1", "files", "{{file_id}}", "nodes"],
+            "query": [
+              {
+                "key": "ids",
+                "value": "{{node_ids}}"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "Get File Images",
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "X-Figma-Token",
+              "value": "your-figma-token-here",
+              "type": "text"
+            }
+          ],
+          "url": {
+            "raw": "https://api.figma.com/v1/images/{{file_id}}?ids={{node_ids}}&scale={{scale}}",
+            "host": ["https://api.figma.com"],
+            "path": ["v1", "images", "{{file_id}}"],
+            "query": [
+              {
+                "key": "ids",
+                "value": "{{node_ids}}"
+              },
+              {
+                "key": "scale",
+                "value": "{{scale}}"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "Get Figma Comments",
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "X-Figma-Token",
+              "value": "your-figma-token-here",
+              "type": "text"
+            }
+          ],
+          "url": {
+            "raw": "https://api.figma.com/v1/files/{{file_id}}/comments",
+            "host": ["https://api.figma.com"],
+            "path": ["v1", "files", "{{file_id}}", "comments"]
+          }
+        }
+      },
+      {
+        "name": "Post Comment",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "X-Figma-Token",
+              "value": "your-figma-token-here",
+              "type": "text"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\"message\": \"{{message}}\",\"client_meta\": {\"x\": {{x}}, \"y\": {{y}}}}"
+          },
+          "url": {
+            "raw": "https://api.figma.com/v1/files/{{file_id}}/comments",
+            "host": ["https://api.figma.com"],
+            "path": ["v1", "files", "{{file_id}}", "comments"]
+          }
+        }
+      },
+      {
+        "name": "Get Team Projects",
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "X-Figma-Token",
+              "value": "your-figma-token-here",
+              "type": "text"
+            }
+          ],
+          "url": {
+            "raw": "https://api.figma.com/v1/teams/{{team_id}}/projects",
+            "host": ["https://api.figma.com"],
+            "path": ["v1", "teams", "{{team_id}}", "projects"]
+          }
+        }
+      }
+    ],
+    "variable": [
+      {
+        "key": "file_id",
+        "value": "your-file-id-here"
+      },
+      {
+        "key": "api_token",
+        "value": "your-figma-token-here"
+      },
+      {
+        "key": "node_ids",
+        "value": ""
+      },
+      {
+        "key": "scale",
+        "value": "2"
+      },
+      {
+        "key": "message",
+        "value": "Your comment here"
+      },
+      {
+        "key": "x",
+        "value": "0"
+      },
+      {
+        "key": "y",
+        "value": "0"
+      },
+      {
+        "key": "team_id",
+        "value": ""
+      }
+    ]
+  }
+  

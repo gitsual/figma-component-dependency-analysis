@@ -1,0 +1,14 @@
+figma:
+  label: Figma
+  permalink: /figma
+  description: Posts related to Figma and design tools
+
+component-analysis:
+  label: Component Analysis
+  permalink: /component-analysis
+  description: Discussions and updates on component analysis tools and methodologies
+
+release:
+  label: Release
+  permalink: /release
+  description: Announcements of project releases and new features
